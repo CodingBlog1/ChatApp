@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
+  </head>
+
+  <body>
+    {% block header%}
+    <div class="alert alert-danger" role="alert">
+        Hi <b>{{ user.username }}</b> ChatApp
+      </div>
+      <br/>
+      
+    {% endblock %}
+
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+    
+  </body>
+</html>
